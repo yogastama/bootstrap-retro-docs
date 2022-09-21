@@ -58,9 +58,7 @@ export const SIDEBAR: Sidebar = {
 		],
 		'Forms': [
 			{ text: 'Overview', link: 'en/overview_form' },
-			{ text: 'Images', link: 'en/images' },
-			{ text: 'Tables', link: 'en/tables' },
-			{ text: 'Figures', link: 'en/figures' },
+			{ text: 'Form control', link: 'en/form_control' },
 		],
 	},
 };
