@@ -53,7 +53,8 @@ export const SIDEBAR: Sidebar = {
 		'Content': [
 			{ text: 'Typography', link: 'en/typography' },
 			{ text: 'Images', link: 'en/images' },
-			{ text: 'Page 4', link: 'en/page-4' },
+			{ text: 'Tables', link: 'en/tables' },
+			{ text: 'Figures', link: 'en/figures' },
 		],
 	},
 };
