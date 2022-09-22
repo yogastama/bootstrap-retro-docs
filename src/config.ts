@@ -61,6 +61,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Form control', link: 'en/form_control' },
 			{ text: 'Select', link: 'en/select' },
 			{ text: 'Check & radios', link: 'en/check_radios' },
+			{ text: 'Range', link: 'en/range' },
 		],
 	},
 };
