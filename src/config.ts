@@ -71,6 +71,8 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Accordion', link: 'en/accordion' },
 			{ text: 'Alerts', link: 'en/alerts' },
 			{ text: 'Badges', link: 'en/badges' },
+			{ text: 'Breadcrumbs', link: 'en/breadcrumbs' },
+			{ text: 'Buttons', link: 'en/buttons' },
 		],
 	},
 };
