@@ -35,6 +35,11 @@ p, .lead, input[placeholder], .form-check-label{
  -webkit-box-shadow: 10px 10px 0px -5px #333430;
  -moz-box-shadow: 10px 10px 0px -5px #333430;
 }
+.input-group .form-control:focus{
+ box-shadow: none;
+ outline: 4px solid #86b6febb;
+ border: 2px solid #85B7FD;
+}
 input[placeholder]{
  font-size: 14px;
  color: #1f1f1f;
