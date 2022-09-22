@@ -67,5 +67,8 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Layout', link: 'en/layout' },
 			{ text: 'Validation', link: 'en/validation' },
 		],
+		'Components': [
+			{ text: 'Accordion', link: 'en/accordion' },
+		],
 	},
 };
