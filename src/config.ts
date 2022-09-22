@@ -63,6 +63,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Check & radios', link: 'en/check_radios' },
 			{ text: 'Range', link: 'en/range' },
 			{ text: 'Input group', link: 'en/input_group' },
+			{ text: 'Floating labels', link: 'en/floating_labels' },
 		],
 	},
 };
