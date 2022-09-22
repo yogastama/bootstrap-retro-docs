@@ -73,6 +73,8 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Badges', link: 'en/badges' },
 			{ text: 'Breadcrumbs', link: 'en/breadcrumbs' },
 			{ text: 'Buttons', link: 'en/buttons' },
+			{ text: 'Button Groups', link: 'en/button_groups' },
+			{ text: 'Cards', link: 'en/cards' },
 		],
 	},
 };
