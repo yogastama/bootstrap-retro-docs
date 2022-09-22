@@ -75,6 +75,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Buttons', link: 'en/buttons' },
 			{ text: 'Button Groups', link: 'en/button_groups' },
 			{ text: 'Cards', link: 'en/cards' },
+			{ text: 'Carousel', link: 'en/carousels' },
 		],
 	},
 };

@@ -37,3 +37,9 @@ if (alertTrigger) {
     alert('Nice, you triggered this alert message!', 'success')
   })
 }
+
+const myCarouselElement = document.querySelector('#carouselExampleSlidesOnly')
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  wrap: false
+})
