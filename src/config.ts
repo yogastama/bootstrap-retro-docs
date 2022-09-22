@@ -65,6 +65,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Input group', link: 'en/input_group' },
 			{ text: 'Floating labels', link: 'en/floating_labels' },
 			{ text: 'Layout', link: 'en/layout' },
+			{ text: 'Validation', link: 'en/validation' },
 		],
 	},
 };
