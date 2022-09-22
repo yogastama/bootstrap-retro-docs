@@ -59,6 +59,8 @@ export const SIDEBAR: Sidebar = {
 		'Forms': [
 			{ text: 'Overview', link: 'en/overview_form' },
 			{ text: 'Form control', link: 'en/form_control' },
+			{ text: 'Select', link: 'en/select' },
+			{ text: 'Check & radios', link: 'en/check_radios' },
 		],
 	},
 };

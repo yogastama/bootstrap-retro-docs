@@ -492,3 +492,15 @@ input[placeholder]{
  max-width: 100%;
  height: auto;
 }
+.form-check-input[type=checkbox]{
+ border-radius: 0px;
+}
+.form-check-input[type=checkbox]:checked{
+ border-radius: 0px;
+ border: 2px solid #b6d4fe;
+ background-color: #0c63e4;
+}
+.form-check-input[type=radio]:checked{
+ border: 2px solid #b6d4fe;
+ background-color: #0c63e4;
+}
