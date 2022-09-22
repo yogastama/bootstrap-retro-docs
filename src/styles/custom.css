@@ -56,7 +56,7 @@ input[placeholder]{
  -webkit-box-shadow: 10px 10px 0px -5px rgb(25, 135, 84);
  -moz-box-shadow: 10px 10px 0px -5px rgb(25, 135, 84);
 }
-.input-group-text, .form-control, .form-floating{
+.input-group-text, .form-control, .form-floating, .btn{
  z-index: 9 !important;
 }
 .accordion {

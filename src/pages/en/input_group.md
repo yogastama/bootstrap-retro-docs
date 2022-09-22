@@ -61,204 +61,507 @@ layout: ../../layouts/MainLayout.astro
 </div>
 <hr>
 
+### Wrapping
+<div class="card">
+ <div class="card-body">
+  <div class="input-group flex-nowrap">
+   <span class="input-group-text" id="addon-wrapping">@</span>
+   <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+    aria-describedby="addon-wrapping">
+  </div>
+ </div>
+ <div class="card-footer">
+  <pre><code class="language-html">&lt;div class=&quot;input-group flex-nowrap&quot;&gt;
+   &lt;span class=&quot;input-group-text&quot; id=&quot;addon-wrapping&quot;&gt;@&lt;/span&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot; aria-describedby=&quot;addon-wrapping&quot;&gt;
+ &lt;/div&gt;</code></pre>
+ </div>
+</div>
+<hr>
+
 ### Sizing
 <div class="card">
  <div class="card-body">
-  <input class="retro-input mt-3 form-control form-control-lg" type="text" placeholder=".form-control-lg"
-   aria-label=".form-control-lg example">
-  <input class="retro-input mt-3 form-control" type="text" placeholder="Default input"
-   aria-label="default input example">
-  <input class="retro-input mt-3 form-control form-control-sm" type="text" placeholder=".form-control-sm"
-   aria-label=".form-control-sm example">
+  <div class="input-group input-group-sm mb-3">
+   <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+  <div class="input-group mb-3">
+   <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+   <input type="text" class="form-control" aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default">
+  </div>
+
+  <div class="input-group input-group-lg">
+   <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+  </div>
  </div>
  <div class="card-footer">
-  <pre><code class="language-html">&lt;input class=&quot;retro-input mt-3 form-control form-control-lg&quot; type=&quot;text&quot; placeholder=&quot;.form-control-lg&quot;
-   aria-label=&quot;.form-control-lg example&quot;&gt;
-  &lt;input class=&quot;retro-input mt-3 form-control&quot; type=&quot;text&quot; placeholder=&quot;Default input&quot; aria-label=&quot;default input example&quot;&gt;
-  &lt;input class=&quot;retro-input mt-3 form-control form-control-sm&quot; type=&quot;text&quot; placeholder=&quot;.form-control-sm&quot;
-   aria-label=&quot;.form-control-sm example&quot;&gt;</code></pre>
- </div>
-</div>
-
-<hr>
-
-### Disabled
-<div class="card">
- <div class="card-body">
-  <input class="retro-input mt-3 form-control" type="text" placeholder="Disabled input"
-   aria-label="Disabled input example" disabled>
-  <input class="retro-input mt-3 form-control" type="text" value="Disabled readonly input"
-   aria-label="Disabled input example" disabled readonly>
- </div>
- <div class="card-footer">
-  <pre><code class="language-html">&lt;input class=&quot;retro-input mt-3 form-control&quot; type=&quot;text&quot; placeholder=&quot;Disabled input&quot; aria-label=&quot;Disabled input example&quot; disabled&gt;
-   &lt;input class=&quot;retro-input mt-3 form-control&quot; type=&quot;text&quot; value=&quot;Disabled readonly input&quot; aria-label=&quot;Disabled input example&quot; disabled readonly&gt;</code></pre>
- </div>
-</div>
-<hr>
-
-### Readonly
-<div class="card">
- <div class="card-body">
-  <input class="retro-input form-control" type="text" value="Readonly input here..." aria-label="readonly input example"
-   readonly>
- </div>
- <div class="card-footer">
-  <pre><code class="language-html">&lt;input class=&quot;retro-input form-control&quot; type=&quot;text&quot; value=&quot;Readonly input here...&quot; aria-label=&quot;readonly input example&quot; readonly&gt;</code></pre>
+  <pre><code class="language-html">&lt;div class=&quot;input-group input-group-sm mb-3&quot;&gt;
+   &lt;span class=&quot;input-group-text&quot; id=&quot;inputGroup-sizing-sm&quot;&gt;Small&lt;/span&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Sizing example input&quot; aria-describedby=&quot;inputGroup-sizing-sm&quot;&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;span class=&quot;input-group-text&quot; id=&quot;inputGroup-sizing-default&quot;&gt;Default&lt;/span&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Sizing example input&quot; aria-describedby=&quot;inputGroup-sizing-default&quot;&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class=&quot;input-group input-group-lg&quot;&gt;
+   &lt;span class=&quot;input-group-text&quot; id=&quot;inputGroup-sizing-lg&quot;&gt;Large&lt;/span&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Sizing example input&quot; aria-describedby=&quot;inputGroup-sizing-lg&quot;&gt;
+ &lt;/div&gt;</code></pre>
  </div>
 </div>
 <hr>
 
-### Readonly plain text
+### Checkboxes & radios
 <div class="card">
  <div class="card-body">
-  <div class="mb-3 row">
-   <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-   <div class="col-sm-10">
-    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+  <div class="input-group mb-3">
+   <div class="input-group-text">
+    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
    </div>
+   <input type="text" class="form-control" aria-label="Text input with checkbox">
   </div>
-  <div class="mb-3 row">
-   <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-   <div class="col-sm-10">
-    <input type="password" class="retro-input form-control" id="inputPassword">
+
+  <div class="input-group">
+   <div class="input-group-text">
+    <input class="form-check-input mt-0" type="radio" value="" aria-label="Radio button for following text input">
    </div>
+   <input type="text" class="form-control" aria-label="Text input with radio button">
   </div>
  </div>
  <div class="card-footer">
-  <pre><code class="language-html">&lt;div class=&quot;mb-3 row&quot;&gt;
-   &lt;label for=&quot;staticEmail&quot; class=&quot;col-sm-2 col-form-label&quot;&gt;Email&lt;/label&gt;
-   &lt;div class=&quot;col-sm-10&quot;&gt;
-    &lt;input type=&quot;text&quot; readonly class=&quot;form-control-plaintext&quot; id=&quot;staticEmail&quot; value=&quot;email@example.com&quot;&gt;
+  <pre><code class="language-html">&lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;div class=&quot;input-group-text&quot;&gt;
+     &lt;input class=&quot;form-check-input mt-0&quot; type=&quot;checkbox&quot; value=&quot;&quot; aria-label=&quot;Checkbox for following text input&quot;&gt;
    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mb-3 row&quot;&gt;
-   &lt;label for=&quot;inputPassword&quot; class=&quot;col-sm-2 col-form-label&quot;&gt;Password&lt;/label&gt;
-   &lt;div class=&quot;col-sm-10&quot;&gt;
-    &lt;input type=&quot;password&quot; class=&quot;retro-input form-control&quot; id=&quot;inputPassword&quot;&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with checkbox&quot;&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class=&quot;input-group&quot;&gt;
+   &lt;div class=&quot;input-group-text&quot;&gt;
+     &lt;input class=&quot;form-check-input mt-0&quot; type=&quot;radio&quot; value=&quot;&quot; aria-label=&quot;Radio button for following text input&quot;&gt;
    &lt;/div&gt;
-  &lt;/div&gt;</code></pre>
- </div>
-</div>
-<div class="card">
- <div class="card-body">
-  <form class="row g-3">
-   <div class="col-auto">
-    <label for="staticEmail2" class="visually-hidden">Email</label>
-    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
-   </div>
-   <div class="col-auto">
-    <label for="inputPassword2" class="visually-hidden">Password</label>
-    <input type="password" class="retro-input form-control" id="inputPassword2" placeholder="Password">
-   </div>
-   <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
-   </div>
-  </form>
- </div>
- <div class="card-footer">
-  <pre><code class="language-html">&lt;form class=&quot;row g-3&quot;&gt;
-   &lt;div class=&quot;col-auto&quot;&gt;
-    &lt;label for=&quot;staticEmail2&quot; class=&quot;visually-hidden&quot;&gt;Email&lt;/label&gt;
-    &lt;input type=&quot;text&quot; readonly class=&quot;form-control-plaintext&quot; id=&quot;staticEmail2&quot; value=&quot;email@example.com&quot;&gt;
-   &lt;/div&gt;
-   &lt;div class=&quot;col-auto&quot;&gt;
-    &lt;label for=&quot;inputPassword2&quot; class=&quot;visually-hidden&quot;&gt;Password&lt;/label&gt;
-    &lt;input type=&quot;password&quot; class=&quot;retro-input form-control&quot; id=&quot;inputPassword2&quot; placeholder=&quot;Password&quot;&gt;
-   &lt;/div&gt;
-   &lt;div class=&quot;col-auto&quot;&gt;
-    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary mb-3&quot;&gt;Confirm identity&lt;/button&gt;
-   &lt;/div&gt;
-  &lt;/form&gt;</code></pre>
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with radio button&quot;&gt;
+ &lt;/div&gt;</code></pre>
  </div>
 </div>
 <hr>
 
-### File input
+### Multiple inputs
 <div class="card">
  <div class="card-body">
-  <div class="mb-3">
-   <label for="formFile" class="form-label">Default file input example</label>
-   <input class="retro-input form-control" type="file" id="formFile">
-  </div>
-  <div class="mb-3">
-   <label for="formFileMultiple" class="form-label">Multiple files input example</label>
-   <input class="retro-input form-control" type="file" id="formFileMultiple" multiple>
-  </div>
-  <div class="mb-3">
-   <label for="formFileDisabled" class="form-label">Disabled file input example</label>
-   <input class="retro-input form-control" type="file" id="formFileDisabled" disabled>
-  </div>
-  <div class="mb-3">
-   <label for="formFileSm" class="form-label">Small file input example</label>
-   <input class="retro-input form-control form-control-sm" id="formFileSm" type="file">
-  </div>
-  <div>
-   <label for="formFileLg" class="form-label">Large file input example</label>
-   <input class="retro-input form-control form-control-lg" id="formFileLg" type="file">
+  <div class="input-group">
+   <span class="input-group-text">First and last name</span>
+   <input type="text" aria-label="First name" class="form-control">
+   <input type="text" aria-label="Last name" class="form-control">
   </div>
  </div>
  <div class="card-footer">
-  <pre><code class="language-html">&lt;div class=&quot;mb-3&quot;&gt;
-   &lt;label for=&quot;formFile&quot; class=&quot;form-label&quot;&gt;Default file input example&lt;/label&gt;
-   &lt;input class=&quot;retro-input form-control&quot; type=&quot;file&quot; id=&quot;formFile&quot;&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mb-3&quot;&gt;
-   &lt;label for=&quot;formFileMultiple&quot; class=&quot;form-label&quot;&gt;Multiple files input example&lt;/label&gt;
-   &lt;input class=&quot;retro-input form-control&quot; type=&quot;file&quot; id=&quot;formFileMultiple&quot; multiple&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mb-3&quot;&gt;
-   &lt;label for=&quot;formFileDisabled&quot; class=&quot;form-label&quot;&gt;Disabled file input example&lt;/label&gt;
-   &lt;input class=&quot;retro-input form-control&quot; type=&quot;file&quot; id=&quot;formFileDisabled&quot; disabled&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;mb-3&quot;&gt;
-   &lt;label for=&quot;formFileSm&quot; class=&quot;form-label&quot;&gt;Small file input example&lt;/label&gt;
-   &lt;input class=&quot;retro-input form-control form-control-sm&quot; id=&quot;formFileSm&quot; type=&quot;file&quot;&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-   &lt;label for=&quot;formFileLg&quot; class=&quot;form-label&quot;&gt;Large file input example&lt;/label&gt;
-   &lt;input class=&quot;retro-input form-control form-control-lg&quot; id=&quot;formFileLg&quot; type=&quot;file&quot;&gt;
-  &lt;/div&gt;</code></pre>
- </div>
-</div>
-<hr>
-### Color
-
-<div class="card">
- <div class="card-body">
-  <label for="exampleColorInput" class="form-label">Color picker</label>
-  <input type="color" class="retro-input form-control form-control-color" id="exampleColorInput" value="#563d7c"
-   title="Choose your color">
- </div>
- <div class="card-footer">
-  <pre><code class="language-html">&lt;label for=&quot;exampleColorInput&quot; class=&quot;form-label&quot;&gt;Color picker&lt;/label&gt;
-   &lt;input type=&quot;color&quot; class=&quot;retro-input form-control form-control-color&quot; id=&quot;exampleColorInput&quot; value=&quot;#563d7c&quot; title=&quot;Choose your color&quot;&gt;</code></pre>
+  <pre><code class="language-html">&lt;div class=&quot;input-group&quot;&gt;
+   &lt;span class=&quot;input-group-text&quot;&gt;First and last name&lt;/span&gt;
+   &lt;input type=&quot;text&quot; aria-label=&quot;First name&quot; class=&quot;form-control&quot;&gt;
+   &lt;input type=&quot;text&quot; aria-label=&quot;Last name&quot; class=&quot;form-control&quot;&gt;
+ &lt;/div&gt;</code></pre>
  </div>
 </div>
 <hr>
 
-### Datalists
+### Multiple addons
 <div class="card">
  <div class="card-body">
-  <label for="exampleDataList" class="form-label">Datalist example</label>
-  <input class="retro-input form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-  <datalist id="datalistOptions">
-   <option value="San Francisco">
-   <option value="New York">
-   <option value="Seattle">
-   <option value="Los Angeles">
-   <option value="Chicago">
-  </datalist>
+  <div class="input-group mb-3">
+   <span class="input-group-text">$</span>
+   <span class="input-group-text">0.00</span>
+   <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+  </div>
+
+  <div class="input-group">
+   <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+   <span class="input-group-text">$</span>
+   <span class="input-group-text">0.00</span>
+  </div>
  </div>
  <div class="card-footer">
-  <pre><code class="language-html">&lt;label for=&quot;exampleDataList&quot; class=&quot;form-label&quot;&gt;Datalist example&lt;/label&gt;
-   &lt;input class=&quot;form-control&quot; list=&quot;datalistOptions&quot; id=&quot;exampleDataList&quot; placeholder=&quot;Type to search...&quot;&gt;
-   &lt;datalist id=&quot;datalistOptions&quot;&gt;
-     &lt;option value=&quot;San Francisco&quot;&gt;
-     &lt;option value=&quot;New York&quot;&gt;
-     &lt;option value=&quot;Seattle&quot;&gt;
-     &lt;option value=&quot;Los Angeles&quot;&gt;
-     &lt;option value=&quot;Chicago&quot;&gt;
-   &lt;/datalist&gt;</code></pre>
+  <pre><code class="language-html">&lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;span class=&quot;input-group-text&quot;&gt;$&lt;/span&gt;
+   &lt;span class=&quot;input-group-text&quot;&gt;0.00&lt;/span&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Dollar amount (with dot and two decimal places)&quot;&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class=&quot;input-group&quot;&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Dollar amount (with dot and two decimal places)&quot;&gt;
+   &lt;span class=&quot;input-group-text&quot;&gt;$&lt;/span&gt;
+   &lt;span class=&quot;input-group-text&quot;&gt;0.00&lt;/span&gt;
+ &lt;/div&gt;</code></pre>
+ </div>
+</div>
+<hr>
+
+### Button addons
+<div class="card">
+ <div class="card-body">
+  <div class="input-group mb-3">
+   <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+   <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+    aria-describedby="button-addon1">
+  </div>
+
+  <div class="input-group mb-3">
+   <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+    aria-describedby="button-addon2">
+   <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+  </div>
+
+  <div class="input-group mb-3">
+   <button class="btn btn-outline-secondary" type="button">Button</button>
+   <button class="btn btn-outline-secondary" type="button">Button</button>
+   <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons">
+  </div>
+
+  <div class="input-group">
+   <input type="text" class="form-control" placeholder="Recipient's username"
+    aria-label="Recipient's username with two button addons">
+   <button class="btn btn-outline-secondary" type="button">Button</button>
+   <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+ </div>
+ <div class="card-footer">
+  <pre><code class="language-html">&lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot; id=&quot;button-addon1&quot;&gt;Button&lt;/button&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;&quot; aria-label=&quot;Example text with button addon&quot; aria-describedby=&quot;button-addon1&quot;&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Recipient's username&quot; aria-label=&quot;Recipient's username&quot; aria-describedby=&quot;button-addon2&quot;&gt;
+   &lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot; id=&quot;button-addon2&quot;&gt;Button&lt;/button&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot;&gt;Button&lt;/button&gt;
+   &lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot;&gt;Button&lt;/button&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;&quot; aria-label=&quot;Example text with two button addons&quot;&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class=&quot;input-group&quot;&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Recipient's username&quot; aria-label=&quot;Recipient's username with two button addons&quot;&gt;
+   &lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot;&gt;Button&lt;/button&gt;
+   &lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot;&gt;Button&lt;/button&gt;
+ &lt;/div&gt;</code></pre>
+ </div>
+</div>
+<hr>
+
+### Buttons with dropdowns
+<div class="card">
+ <div class="card-body">
+  <div class="input-group mb-3">
+   <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+    aria-expanded="false">Dropdown</button>
+   <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li>
+     <hr class="dropdown-divider">
+    </li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+   </ul>
+   <input type="text" class="form-control" aria-label="Text input with dropdown button">
+  </div>
+
+  <div class="input-group mb-3">
+   <input type="text" class="form-control" aria-label="Text input with dropdown button">
+   <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+    aria-expanded="false">Dropdown</button>
+   <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li>
+     <hr class="dropdown-divider">
+    </li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+   </ul>
+  </div>
+
+  <div class="input-group">
+   <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+    aria-expanded="false">Dropdown</button>
+   <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action before</a></li>
+    <li><a class="dropdown-item" href="#">Another action before</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li>
+     <hr class="dropdown-divider">
+    </li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+   </ul>
+   <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+   <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+    aria-expanded="false">Dropdown</button>
+   <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li>
+     <hr class="dropdown-divider">
+    </li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+   </ul>
+  </div>
+ </div>
+ <div class="card-footer">
+  <pre><code class="language-html">&lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;button class=&quot;btn btn-outline-secondary dropdown-toggle&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/button&gt;
+   &lt;ul class=&quot;dropdown-menu&quot;&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with dropdown button&quot;&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with dropdown button&quot;&gt;
+   &lt;button class=&quot;btn btn-outline-secondary dropdown-toggle&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/button&gt;
+   &lt;ul class=&quot;dropdown-menu dropdown-menu-end&quot;&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+ &lt;/div&gt;
+ 
+ &lt;div class=&quot;input-group&quot;&gt;
+   &lt;button class=&quot;btn btn-outline-secondary dropdown-toggle&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/button&gt;
+   &lt;ul class=&quot;dropdown-menu&quot;&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action before&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action before&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with 2 dropdown buttons&quot;&gt;
+   &lt;button class=&quot;btn btn-outline-secondary dropdown-toggle&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/button&gt;
+   &lt;ul class=&quot;dropdown-menu dropdown-menu-end&quot;&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+ &lt;/div&gt;</code></pre>
+ </div>
+</div>
+<hr>
+
+### Segmented buttons
+<div class="card">
+ <div class="card-body">
+  <div class="input-group mb-3">
+   <button type="button" class="btn btn-outline-secondary">Action</button>
+   <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+    data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="visually-hidden">Toggle Dropdown</span>
+   </button>
+   <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li>
+     <hr class="dropdown-divider">
+    </li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+   </ul>
+   <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+  </div>
+
+  <div class="input-group">
+   <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+   <button type="button" class="btn btn-outline-secondary">Action</button>
+   <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+    data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="visually-hidden">Toggle Dropdown</span>
+   </button>
+   <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <li>
+     <hr class="dropdown-divider">
+    </li>
+    <li><a class="dropdown-item" href="#">Separated link</a></li>
+   </ul>
+  </div>
+ </div>
+ <div class="card-footer">
+  <pre><code class="language-html">&lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;Action&lt;/button&gt;
+   &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+     &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
+   &lt;/button&gt;
+   &lt;ul class=&quot;dropdown-menu&quot;&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with segmented dropdown button&quot;&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;input-group&quot;&gt;
+   &lt;input type=&quot;text&quot; class=&quot;form-control&quot; aria-label=&quot;Text input with segmented dropdown button&quot;&gt;
+   &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary&quot;&gt;Action&lt;/button&gt;
+   &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-secondary dropdown-toggle dropdown-toggle-split&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot;&gt;
+     &lt;span class=&quot;visually-hidden&quot;&gt;Toggle Dropdown&lt;/span&gt;
+   &lt;/button&gt;
+   &lt;ul class=&quot;dropdown-menu dropdown-menu-end&quot;&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;hr class=&quot;dropdown-divider&quot;&gt;&lt;/li&gt;
+     &lt;li&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+ &lt;/div&gt;</code></pre>
+ </div>
+</div>
+<hr>
+
+### Custom forms
+
+#### Custom select
+<div class="card">
+ <div class="card-body">
+  <div class="input-group mb-3">
+   <label class="input-group-text" for="inputGroupSelect01">Options</label>
+   <select class="form-select" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+   </select>
+  </div>
+
+  <div class="input-group mb-3">
+   <select class="form-select" id="inputGroupSelect02">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+   </select>
+   <label class="input-group-text" for="inputGroupSelect02">Options</label>
+  </div>
+
+  <div class="input-group mb-3">
+   <button class="btn btn-outline-secondary" type="button">Button</button>
+   <select class="form-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+   </select>
+  </div>
+
+  <div class="input-group">
+   <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+   </select>
+   <button class="btn btn-outline-secondary" type="button">Button</button>
+  </div>
+ </div>
+ <div class="card-footer">
+  <pre><code class="language-html">&lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;label class=&quot;input-group-text&quot; for=&quot;inputGroupSelect01&quot;&gt;Options&lt;/label&gt;
+   &lt;select class=&quot;form-select&quot; id=&quot;inputGroupSelect01&quot;&gt;
+     &lt;option selected&gt;Choose...&lt;/option&gt;
+     &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+     &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+     &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+   &lt;/select&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;select class=&quot;form-select&quot; id=&quot;inputGroupSelect02&quot;&gt;
+     &lt;option selected&gt;Choose...&lt;/option&gt;
+     &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+     &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+     &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+   &lt;/select&gt;
+   &lt;label class=&quot;input-group-text&quot; for=&quot;inputGroupSelect02&quot;&gt;Options&lt;/label&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot;&gt;Button&lt;/button&gt;
+   &lt;select class=&quot;form-select&quot; id=&quot;inputGroupSelect03&quot; aria-label=&quot;Example select with button addon&quot;&gt;
+     &lt;option selected&gt;Choose...&lt;/option&gt;
+     &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+     &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+     &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+   &lt;/select&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;input-group&quot;&gt;
+   &lt;select class=&quot;form-select&quot; id=&quot;inputGroupSelect04&quot; aria-label=&quot;Example select with button addon&quot;&gt;
+     &lt;option selected&gt;Choose...&lt;/option&gt;
+     &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+     &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+     &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+   &lt;/select&gt;
+   &lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot;&gt;Button&lt;/button&gt;
+ &lt;/div&gt;</code></pre>
+ </div>
+</div>
+
+
+#### Custom file input
+<div class="card">
+ <div class="card-body">
+  <div class="input-group mb-3">
+   <label class="input-group-text" for="inputGroupFile01">Upload</label>
+   <input type="file" class="form-control" id="inputGroupFile01">
+  </div>
+
+  <div class="input-group mb-3">
+   <input type="file" class="form-control" id="inputGroupFile02">
+   <label class="input-group-text" for="inputGroupFile02">Upload</label>
+  </div>
+
+  <div class="input-group mb-3">
+   <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Button</button>
+   <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03"
+    aria-label="Upload">
+  </div>
+
+  <div class="input-group">
+   <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+    aria-label="Upload">
+   <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
+  </div>
+ </div>
+ <div class="card-footer">
+  <pre><code class="language-html">&lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;label class=&quot;input-group-text&quot; for=&quot;inputGroupFile01&quot;&gt;Upload&lt;/label&gt;
+   &lt;input type=&quot;file&quot; class=&quot;form-control&quot; id=&quot;inputGroupFile01&quot;&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;input type=&quot;file&quot; class=&quot;form-control&quot; id=&quot;inputGroupFile02&quot;&gt;
+   &lt;label class=&quot;input-group-text&quot; for=&quot;inputGroupFile02&quot;&gt;Upload&lt;/label&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;input-group mb-3&quot;&gt;
+   &lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot; id=&quot;inputGroupFileAddon03&quot;&gt;Button&lt;/button&gt;
+   &lt;input type=&quot;file&quot; class=&quot;form-control&quot; id=&quot;inputGroupFile03&quot; aria-describedby=&quot;inputGroupFileAddon03&quot; aria-label=&quot;Upload&quot;&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;input-group&quot;&gt;
+   &lt;input type=&quot;file&quot; class=&quot;form-control&quot; id=&quot;inputGroupFile04&quot; aria-describedby=&quot;inputGroupFileAddon04&quot; aria-label=&quot;Upload&quot;&gt;
+   &lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot; id=&quot;inputGroupFileAddon04&quot;&gt;Button&lt;/button&gt;
+ &lt;/div&gt;</code></pre>
  </div>
 </div>
