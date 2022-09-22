@@ -70,6 +70,7 @@ export const SIDEBAR: Sidebar = {
 		'Components': [
 			{ text: 'Accordion', link: 'en/accordion' },
 			{ text: 'Alerts', link: 'en/alerts' },
+			{ text: 'Badges', link: 'en/badges' },
 		],
 	},
 };
