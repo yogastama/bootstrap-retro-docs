@@ -1,5 +1,5 @@
 ---
-import AvatarList from './AvatarList.astro';
+import AvatarList from "./AvatarList.astro";
 type Props = {
 	path: string;
 };
@@ -9,6 +9,7 @@ const { path } = Astro.props as Props;
 <footer>
 	<AvatarList path={path} />
 </footer>
+<script src="/custom.js" is:inline></script>
 
 <style>
 	footer {
