@@ -9,7 +9,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Example
+## Example
 
 <div class="card">
  <div class="card-body">
@@ -65,7 +65,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Textareas
+## Textareas
 <div class="card">
  <div class="card-body">
   <div class="form-floating">
@@ -97,7 +97,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Selects
+## Selects
 <div class="card">
  <div class="card-body">
   <div class="form-floating">
@@ -124,7 +124,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Readonly plaintext
+## Readonly plaintext
 <div class="card">
  <div class="card-body">
   <div class="form-floating mb-3">
@@ -151,7 +151,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Input groups
+## Input groups
 <div class="card">
  <div class="card-body">
   <div class="input-group mb-3">
@@ -200,7 +200,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Layout
+## Layout
 <div class="card">
  <div class="card-body">
   <div class="row g-2">

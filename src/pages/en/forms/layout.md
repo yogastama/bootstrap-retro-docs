@@ -9,7 +9,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Utilities
+## Utilities
 
 <div class="card">
  <div class="card-body">
@@ -37,7 +37,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Form grid
+## Form grid
 <div class="card">
  <div class="card-body">
   <div class="row">
@@ -61,7 +61,7 @@ layout: ../../../layouts/MainLayout.astro
  </div>
 </div>
 
-### Gutters
+## Gutters
 <div class="card">
  <div class="card-body">
   <div class="row g-3">
@@ -184,7 +184,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Horizontal form
+## Horizontal form
 <div class="card">
  <div class="card-body">
   <form>
@@ -336,7 +336,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Column sizing
+## Column sizing
 <div class="card">
  <div class="card-body">
   <div class="row g-3">
@@ -366,7 +366,7 @@ layout: ../../../layouts/MainLayout.astro
  </div>
 </div>
 
-### Auto-sizing
+## Auto-sizing
 <div class="card">
  <div class="card-body">
   <form class="row gy-2 gx-3 align-items-center">
@@ -515,7 +515,7 @@ layout: ../../../layouts/MainLayout.astro
 <hr>
 
 
-### Inline forms
+## Inline forms
 
 <div class="card">
  <div class="card-body">

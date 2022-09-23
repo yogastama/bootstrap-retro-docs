@@ -87,7 +87,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Background colors
+## Background colors
 <div class="card">
  <div class="card-body">
   <span class="badge text-bg-primary">Primary</span>
@@ -112,7 +112,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Pill badges
+## Pill badges
 <div class="card">
  <div class="card-body">
   <span class="badge rounded-pill text-bg-primary">Primary</span>

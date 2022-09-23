@@ -9,7 +9,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 
 
-### Slides only
+## Slides only
 <div class="card">
   <div class="card-body">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -51,7 +51,7 @@ layout: ../../../layouts/MainLayout.astro
 <hr>
 
 
-### With controls
+## With controls
 <div class="card">
   <div class="card-body">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -110,7 +110,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### With indicators
+## With indicators
 <div class="card">
   <div class="card-body">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -182,7 +182,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### With captions
+## With captions
 <div class="card">
   <div class="card-body">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
@@ -266,7 +266,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Crossfade
+## Crossfade
 <div class="card">
   <div class="card-body">
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -317,7 +317,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Individual .carousel-item interval
+## Individual .carousel-item interval
 <div class="card">
   <div class="card-body">
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -368,7 +368,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Disable touch swiping
+## Disable touch swiping
 <div class="card">
   <div class="card-body">
     <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
@@ -419,7 +419,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Dark variant
+## Dark variant
 <div class="card">
   <div class="card-body">
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -486,7 +486,7 @@ layout: ../../../layouts/MainLayout.astro
   </div>
 </div>
 
-### Methods
+## Methods
 <div class="card">
   <div class="card-footer">
     <pre><code class="language-js">const myCarouselElement = document.querySelector('#myCarousel')

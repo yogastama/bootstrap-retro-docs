@@ -10,7 +10,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Custom styles
+## Custom styles
 <div class="card">
  <div class="card-body">
   <form class="row g-3 needs-validation" novalidate>
@@ -171,7 +171,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Server side
+## Server side
 <div class="card">
  <div class="card-body">
   <form class="row g-3">
@@ -313,7 +313,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Supported elements
+## Supported elements
 <div class="card">
  <div class="card-body">
   <form class="was-validated">
@@ -405,7 +405,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Tooltips
+## Tooltips
 <div class="card">
  <div class="card-body">
   <form class="row g-3 needs-validation" novalidate>

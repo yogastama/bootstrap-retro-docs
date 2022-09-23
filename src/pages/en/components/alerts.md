@@ -10,7 +10,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Example
+## Example
 <div class="card">
  <div class="card-body">
   <div class="alert alert-primary" role="alert">

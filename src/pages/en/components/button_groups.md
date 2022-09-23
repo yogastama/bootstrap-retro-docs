@@ -9,7 +9,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Basic example
+## Basic example
 <div class="card">
  <div class="card-body">
   <div class="btn-group" role="group" aria-label="Basic example">
@@ -44,7 +44,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Mixed styles
+## Mixed styles
 <div class="card">
  <div class="card-body">
   <div class="btn-group" role="group" aria-label="Basic mixed styles example">
@@ -63,7 +63,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Outlined styles
+## Outlined styles
 <div class="card">
  <div class="card-body">
   <div class="btn-group" role="group" aria-label="Basic outlined example">

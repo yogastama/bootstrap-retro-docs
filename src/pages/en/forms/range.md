@@ -9,7 +9,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Overview
+## Overview
 
 <div class="card">
  <div class="card-body">
@@ -23,7 +23,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Disabled
+## Disabled
 <div class="card">
  <div class="card-body">
   <label for="disabledRange" class="form-label">Disabled range</label>
@@ -36,7 +36,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Min and max
+## Min and max
 <div class="card">
  <div class="card-body">
   <label for="customRange2" class="form-label">Example range</label>
@@ -49,7 +49,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Steps
+## Steps
 <div class="card">
  <div class="card-body">
   <label for="customRange3" class="form-label">Example range</label>

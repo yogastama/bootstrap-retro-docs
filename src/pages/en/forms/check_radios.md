@@ -9,7 +9,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Default
+## Default
 
 <div class="card">
  <div class="card-body">
@@ -43,7 +43,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Indeterminate
+## Indeterminate
 <div class="card">
  <div class="card-body">
   <div class="form-check">
@@ -63,7 +63,7 @@ layout: ../../../layouts/MainLayout.astro
  </div>
 </div>
 
-### Disabled
+## Disabled
 <div class="card">
  <div class="card-body">
   <div class="form-check">
@@ -108,7 +108,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Radios
+## Radios
 <div class="card">
  <div class="card-body">
   <div class="form-check">
@@ -142,7 +142,7 @@ layout: ../../../layouts/MainLayout.astro
 
 <hr>
 
-### Disabled
+## Disabled
 
 <div class="card">
  <div class="card-body">
@@ -177,7 +177,7 @@ layout: ../../../layouts/MainLayout.astro
 
 <hr>
 
-### Switches
+## Switches
 
 <div class="card">
  <div class="card-body">
@@ -219,7 +219,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Default (stacked)
+## Default (stacked)
 
 <div class="card">
  <div class="card-body">
@@ -295,7 +295,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Inline
+## Inline
 
 <div class="card">
  <div class="card-body">
@@ -360,7 +360,7 @@ layout: ../../../layouts/MainLayout.astro
 
 <hr>
 
-### Reverse
+## Reverse
 <div class="card">
  <div class="card-body">
   <div class="form-check form-check-reverse">
@@ -403,7 +403,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Without labels
+## Without labels
 <div class="card">
  <div class="card-body">
   <div>
@@ -429,9 +429,9 @@ layout: ../../../layouts/MainLayout.astro
 
 <hr>
 
-### Toggle buttons
+## Toggle buttons
 
-#### Checkbox toggle buttons
+### Checkbox toggle buttons
 <div class="card">
  <div class="card-body">
   <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">

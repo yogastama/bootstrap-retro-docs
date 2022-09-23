@@ -10,7 +10,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Basic Example
+## Basic Example
 
 <div class="card">
  <div class="card-body">
@@ -61,7 +61,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Wrapping
+## Wrapping
 <div class="card">
  <div class="card-body">
   <div class="input-group flex-nowrap">
@@ -79,7 +79,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Sizing
+## Sizing
 <div class="card">
  <div class="card-body">
   <div class="input-group input-group-sm mb-3">
@@ -117,7 +117,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Checkboxes & radios
+## Checkboxes & radios
 <div class="card">
  <div class="card-body">
   <div class="input-group mb-3">
@@ -152,7 +152,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Multiple inputs
+## Multiple inputs
 <div class="card">
  <div class="card-body">
   <div class="input-group">
@@ -171,7 +171,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Multiple addons
+## Multiple addons
 <div class="card">
  <div class="card-body">
   <div class="input-group mb-3">
@@ -202,7 +202,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Button addons
+## Button addons
 <div class="card">
  <div class="card-body">
   <div class="input-group mb-3">
@@ -256,7 +256,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Buttons with dropdowns
+## Buttons with dropdowns
 <div class="card">
  <div class="card-body">
   <div class="input-group mb-3">
@@ -363,7 +363,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Segmented buttons
+## Segmented buttons
 <div class="card">
  <div class="card-body">
   <div class="input-group mb-3">
@@ -435,9 +435,9 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Custom forms
+## Custom forms
 
-#### Custom select
+### Custom select
 <div class="card">
  <div class="card-body">
   <div class="input-group mb-3">
@@ -521,7 +521,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 
 
-#### Custom file input
+### Custom file input
 <div class="card">
  <div class="card-body">
   <div class="input-group mb-3">

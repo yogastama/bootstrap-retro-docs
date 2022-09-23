@@ -10,7 +10,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 
 
-### Examples
+## Examples
 <div class="card">
  <div class="card-body">
   <button type="button" class="btn btn-primary">Primary</button>
@@ -39,7 +39,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Outline buttons
+## Outline buttons
 <div class="card">
  <div class="card-body">
   <button type="button" class="btn btn-outline-primary">Primary</button>
@@ -64,7 +64,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Sizes
+## Sizes
 <div class="card">
  <div class="card-body">
   <button type="button" class="btn btn-primary btn-lg">Large button</button>
@@ -87,7 +87,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Disabled state
+## Disabled state
 <div class="card">
  <div class="card-body">
   <button type="button" class="btn btn-primary" disabled>Primary button</button>
@@ -104,7 +104,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Block buttons
+## Block buttons
 <div class="card">
  <div class="card-body">
   <div class="d-grid gap-2">
@@ -163,9 +163,9 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Button plugin
+## Button plugin
 
-#### Toggle states
+### Toggle states
 <div class="card">
  <div class="card-body">
   <button type="button" class="btn btn-primary" data-bs-toggle="button">Toggle button</button>

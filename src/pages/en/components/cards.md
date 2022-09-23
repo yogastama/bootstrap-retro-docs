@@ -9,7 +9,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Example
+## Example
 <div class="card">
   <div class="card-body">
     <div class="card" style="width: 18rem;">
@@ -36,9 +36,9 @@ layout: ../../../layouts/MainLayout.astro
   </div>
 </div>
 
-### Content Types
+## Content Types
 
-### Body
+## Body
 <div class="card">
   <div class="card-body">
     <div class="card">
@@ -56,7 +56,7 @@ layout: ../../../layouts/MainLayout.astro
   </div>
 </div>
 
-### Titles, text, and links
+## Titles, text, and links
 <div class="card">
   <div class="card-body">
     <div class="card" style="width: 18rem;">
@@ -83,7 +83,7 @@ layout: ../../../layouts/MainLayout.astro
   </div>
 </div>
 
-### Images
+## Images
 <div class="card">
   <div class="card-body">
     <div class="card" style="width: 18rem;">
@@ -106,7 +106,7 @@ layout: ../../../layouts/MainLayout.astro
   </div>
 </div>
 
-### List groups
+## List groups
 <div class="card">
   <div class="card-body">
     <div class="card" style="width: 18rem;">
@@ -181,7 +181,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Kitchen sink
+## Kitchen sink
 <div class="card">
   <div class="card-body">
     <div class="card" style="width: 18rem;">
@@ -225,7 +225,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Header and footer
+## Header and footer
 <div class="card">
   <div class="card-body">
     <div class="card">
@@ -336,10 +336,10 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Sizing
+## Sizing
 
 
-#### Using grid markup
+### Using grid markup
 <div class="card">
   <div class="card-body">
     <div class="row">
@@ -387,7 +387,7 @@ layout: ../../../layouts/MainLayout.astro
   </div>
 </div>
 
-#### Using utilities
+### Using utilities
 <div class="card">
   <div class="card-body">
     <div class="card w-75">
@@ -423,7 +423,7 @@ layout: ../../../layouts/MainLayout.astro
   </div>
 </div>
 
-#### Using custom CSS
+### Using custom CSS
 <div class="card">
   <div class="card-body">
     <div class="card" style="width: 18rem;">
@@ -446,7 +446,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Text alignment
+## Text alignment
 <div class="card">
   <div class="card-body">
     <div class="card" style="width: 18rem;">
@@ -474,7 +474,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Navigation
+## Navigation
 <div class="card">
   <div class="card-body">
     <div class="card text-center">
@@ -569,9 +569,9 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Images
+## Images
 
-#### Image caps
+### Image caps
 <div class="card">
   <div class="card-body">
     <div class="card mb-3">
@@ -617,7 +617,7 @@ layout: ../../../layouts/MainLayout.astro
   </div>
 </div>
 
-#### Image overlays
+### Image overlays
 <div class="card">
   <div class="card-body">
     <div class="card text-bg-dark">
@@ -654,7 +654,7 @@ layout: ../../../layouts/MainLayout.astro
 
 <hr>
 
-### Horizontal
+## Horizontal
 <div class="card">
   <div class="card-body">
     <div class="card mb-3" style="max-width: 540px;">
@@ -694,7 +694,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Background and colors
+## Background and colors
 <div class="card">
   <div class="card-body">
     <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
@@ -823,7 +823,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Borders
+## Borders
 <div class="card">
   <div class="card-body">
     <div class="card border-primary mb-3" style="max-width: 18rem;">
@@ -952,7 +952,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Grid cards
+## Grid cards
 <div class="card">
   <div class="card-body">
     <div class="row row-cols-1 row-cols-md-2 g-4">

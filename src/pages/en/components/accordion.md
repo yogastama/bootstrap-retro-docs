@@ -9,7 +9,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Example
+## Example
 <div class="card">
  <div class="card-body">
   <div class="accordion" id="accordionExample">
@@ -112,7 +112,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Flush
+## Flush
 <div class="card">
  <div class="card-body">
   <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -197,7 +197,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Always open
+## Always open
 <div class="card">
  <div class="card-body">
   <div class="accordion" id="accordionPanelsStayOpenExample">
