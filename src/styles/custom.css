@@ -688,6 +688,9 @@ input[placeholder] {
  width: 25px;
  height: 25px;
 }
+.form-check-reverse label{
+ margin-right: 7px;
+}
 
 .form-check-input[type=checkbox]:checked {
  border-radius: 0px;

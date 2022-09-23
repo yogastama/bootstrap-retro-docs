@@ -377,7 +377,7 @@ layout: ../../../layouts/MainLayout.astro
   </div>
 
   <div class="form-check form-switch form-check-reverse">
-   <input class="form-check-input" type="checkbox" id="flexSwitchCheckReverse">
+   <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckReverse">
    <label class="form-check-label" for="flexSwitchCheckReverse">Reverse switch checkbox input</label>
   </div>
  </div>
