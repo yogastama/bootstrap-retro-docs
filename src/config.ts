@@ -87,6 +87,7 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Placeholders', link: 'en/components/placeholders' },
 			{ text: 'Popovers', link: 'en/components/popovers' },
 			{ text: 'Progress', link: 'en/components/progress' },
+			{ text: 'Scrollspy', link: 'en/components/scrollspy' },
 		],
 	},
 };
