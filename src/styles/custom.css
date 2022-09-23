@@ -902,3 +902,20 @@ article.content-astro>section :is(ul.nav, ol.nav, ul.list-group, ol.list-group, 
  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #fff;
  border-bottom: var(--bs-nav-tabs-border-width) solid var(--bs-nav-tabs-border-color);
 }
+.offcanvas{
+ margin-top: 0 !important;
+}
+ul.pagination li a, ul.pagination li span{
+ border-radius: 0px !important;
+ box-shadow: 4px 4px 0px 0px #c2c2c2;
+ -webkit-box-shadow: 4px 4px 0px 0px #c2c2c2;
+ -moz-box-shadow: 4px 4px 0px 0px #c2c2c2;
+ border: 2px solid #111;
+}
+ul.pagination li.active a, ul.pagination li.active span{
+ border-radius: 0px !important;
+ box-shadow: 4px 4px 0px 0px #111;
+ -webkit-box-shadow: 4px 4px 0px 0px #111;
+ -moz-box-shadow: 4px 4px 0px 0px #111;
+ border: 2px solid #111;
+}

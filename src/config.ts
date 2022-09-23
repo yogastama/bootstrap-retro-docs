@@ -82,6 +82,8 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Modals', link: 'en/components/modals' },
 			{ text: 'Navbar', link: 'en/components/navbar' },
 			{ text: 'Nav & Tabs', link: 'en/components/nav_tabs' },
+			{ text: 'Offcanvas', link: 'en/components/offcanvas' },
+			{ text: 'Pagination', link: 'en/components/pagination' },
 		],
 	},
 };
