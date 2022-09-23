@@ -674,10 +674,15 @@ input[placeholder] {
  height: auto;
 }
 
-.form-check-input[type=checkbox] {
+.form-check-input[type=checkbox]:not([role=switch]) {
  border-radius: 0px;
  width: 25px;
  height: 25px;
+}
+.form-check-input[type=checkbox][role=switch]{
+ border-radius: 0px;
+ height: 25px;
+ width: 40px;
 }
 .form-check-input[type=radio] {
  width: 25px;
