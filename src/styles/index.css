@@ -286,7 +286,7 @@ img {
 	align-items: center;
 }
 
-button {
+/* button:not(.btn) {
 	display: flex;
 	align-items: center;
 	justify-items: center;
@@ -301,7 +301,7 @@ button {
 	border-radius: 99em;
 	color: var(--theme-text);
 	background-color: var(--theme-bg);
-}
+} */
 
 h2.heading {
 	font-size: 1rem;

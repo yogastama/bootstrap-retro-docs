@@ -80,6 +80,8 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Dropdowns', link: 'en/components/dropdowns' },
 			{ text: 'List groups', link: 'en/components/list_groups' },
 			{ text: 'Modals', link: 'en/components/modals' },
+			{ text: 'Navbar', link: 'en/components/navbar' },
+			{ text: 'Nav & Tabs', link: 'en/components/nav_tabs' },
 		],
 	},
 };
