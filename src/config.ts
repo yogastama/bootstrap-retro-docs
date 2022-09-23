@@ -85,6 +85,8 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Offcanvas', link: 'en/components/offcanvas' },
 			{ text: 'Pagination', link: 'en/components/pagination' },
 			{ text: 'Placeholders', link: 'en/components/placeholders' },
+			{ text: 'Popovers', link: 'en/components/popovers' },
+			{ text: 'Progress', link: 'en/components/progress' },
 		],
 	},
 };
