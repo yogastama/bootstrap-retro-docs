@@ -59,13 +59,9 @@ const popover = new bootstrap.Popover('.example-popover', {
 
 ### Custom popovers
 
-{{< added-in "5.2.0" >}}
 
 You can customize the appearance of popovers using [CSS variables](#variables). We set a custom class with `data-bs-custom-class="custom-popover"` to scope our custom appearance and use it to override some of the local CSS variables.
 
-{{< scss-docs name="custom-popovers" file="site/assets/scss/_component-examples.scss" >}}
-
-{{< example class="custom-popover-demo" stackblitz_add_js="true" >}}
 <button type="button" class="btn btn-secondary"
         data-bs-toggle="popover" data-bs-placement="right"
         data-bs-custom-class="custom-popover"
@@ -73,21 +69,12 @@ You can customize the appearance of popovers using [CSS variables](#variables). 
         data-bs-content="This popover is themed via CSS variables.">
   Custom popover
 </button>
-{{< /example >}}
-
 ### Dismiss on next click
 
 Use the `focus` trigger to dismiss popovers on the user's next click of a different element than the toggle element.
 
-{{< callout danger >}}
-#### Specific markup required for dismiss-on-next-click
 
-For proper cross-browser and cross-platform behavior, you must use the `<a>` tag, _not_ the `<button>` tag, and you also must include a [`tabindex`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex) attribute.
-{{< /callout >}}
-
-{{< example stackblitz_add_js="true" >}}
 <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
-{{< /example >}}
 
 ```js
 const popover = new bootstrap.Popover('.popover-dismiss', {
@@ -101,25 +88,9 @@ Elements with the `disabled` attribute aren't interactive, meaning users cannot 
 
 For disabled popover triggers, you may also prefer `data-bs-trigger="hover focus"` so that the popover appears as immediate visual feedback to your users as they may not expect to _click_ on a disabled element.
 
-{{< example stackblitz_add_js="true" >}}
 <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
   <button class="btn btn-primary" type="button" disabled>Disabled button</button>
 </span>
-{{< /example >}}
-
-## CSS
-
-### Variables
-
-{{< added-in "5.2.0" >}}
-
-As part of Bootstrap’s evolving CSS variables approach, popovers now use local CSS variables on `.popover` for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
-
-{{< scss-docs name="popover-css-vars" file="scss/_popover.scss" >}}
-
-### Sass variables
-
-{{< scss-docs name="popover-variables" file="scss/_variables.scss" >}}
 
 ## Usage
 
@@ -130,27 +101,10 @@ const exampleEl = document.getElementById('example')
 const popover = new bootstrap.Popover(exampleEl, options)
 ```
 
-{{< callout warning >}}
-### Making popovers work for keyboard and assistive technology users
-
-To allow keyboard users to activate your popovers, you should only add them to HTML elements that are traditionally keyboard-focusable and interactive (such as links or form controls). Although arbitrary HTML elements (such as `<span>`s) can be made focusable by adding the `tabindex="0"` attribute, this will add potentially annoying and confusing tab stops on non-interactive elements for keyboard users, and most assistive technologies currently do not announce the popover's content in this situation. Additionally, do not rely solely on `hover` as the trigger for your popovers, as this will make them impossible to trigger for keyboard users.
-
-While you can insert rich, structured HTML in popovers with the `html` option, we strongly recommend that you avoid adding an excessive amount of content. The way popovers currently work is that, once displayed, their content is tied to the trigger element with the `aria-describedby` attribute. As a result, the entirety of the popover's content will be announced to assistive technology users as one long, uninterrupted stream.
-
-Additionally, while it is possible to also include interactive controls (such as form elements or links) in your popover (by adding these elements to the `allowList` of allowed attributes and tags), be aware that currently the popover does not manage keyboard focus order. When a keyboard user opens a popover, focus remains on the triggering element, and as the popover usually does not immediately follow the trigger in the document's structure, there is no guarantee that moving forward/pressing <kbd>TAB</kbd> will move a keyboard user into the popover itself. In short, simply adding interactive controls to a popover is likely to make these controls unreachable/unusable for keyboard users and users of assistive technologies, or at the very least make for an illogical overall focus order. In these cases, consider using a modal dialog instead.
-{{< /callout >}}
-
 ### Options
 
-{{< markdown >}}
-{{< partial "js-data-attributes.md" >}}
-{{< /markdown >}}
-
-{{< callout warning >}}
 Note that for security reasons the `sanitize`, `sanitizeFn`, and `allowList` options cannot be supplied using data attributes.
-{{< /callout >}}
 
-{{< bs-table "table" >}}
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | `allowList` | object | [Default value]({{< docsref "/getting-started/javascript#sanitizer" >}}) | Object which contains allowed attributes and tags. |
@@ -171,13 +125,10 @@ Note that for security reasons the `sanitize`, `sanitizeFn`, and `allowList` opt
 | `template` | string | `'<div class="popover" role="popover"><div class="popover-arrow"></div><div class="popover-inner"></div></div>'` | Base HTML to use when creating the popover. The popover's `title` will be injected into the `.popover-inner`. `.popover-arrow` will become the popover's arrow. The outermost wrapper element should have the `.popover` class and `role="popover"`. |
 | `title` | string, element, function | `''` | Default title value if `title` attribute isn't present. If a function is given, it will be called with its `this` reference set to the element that the popover is attached to. |
 | `trigger` | string | `'hover focus'` | How popover is triggered: click, hover, focus, manual. You may pass multiple triggers; separate them with a space. `'manual'` indicates that the popover will be triggered programmatically via the `.popover('show')`, `.popover('hide')` and `.popover('toggle')` methods; this value cannot be combined with any other trigger. `'hover'` on its own will result in popovers that cannot be triggered via the keyboard, and should only be used if alternative methods for conveying the same information for keyboard users is present. |
-{{< /bs-table >}}
 
-{{< callout info >}}
 #### Data attributes for individual popovers
 
 Options for individual popovers can alternatively be specified through the use of data attributes, as explained above.
-{{< /callout >}}
 
 #### Using function with `popperConfig`
 
@@ -193,11 +144,7 @@ const popover = new bootstrap.Popover(element, {
 
 ### Methods
 
-{{< callout danger >}}
-{{< partial "callout-danger-async-methods.md" >}}
-{{< /callout >}}
 
-{{< bs-table "table" >}}
 | Method | Description |
 | --- | --- |
 | `disable` | Removes the ability for an element's popover to be shown. The popover will only be able to be shown if it is re-enabled. |
@@ -211,8 +158,6 @@ const popover = new bootstrap.Popover(element, {
 | `toggle` | Toggles an element's popover. **Returns to the caller before the popover has actually been shown or hidden** (i.e. before the `shown.bs.popover` or `hidden.bs.popover` event occurs). This is considered a "manual" triggering of the popover. |
 | `toggleEnabled` | Toggles the ability for an element's popover to be shown or hidden. |
 | `update` | Updates the position of an element's popover. |
-{{< /bs-table >}}
-
 
 ```js
 // getOrCreateInstance example
@@ -226,13 +171,10 @@ myPopover.setContent({
 
 ```
 
-{{< callout info >}}
 The `setContent` method accepts an `object` argument, where each property-key is a valid `string` selector within the popover template, and each related property-value can be `string` | `element` | `function` | `null`
-{{< /callout >}}
 
 ### Events
 
-{{< bs-table >}}
 | Event | Description |
 | --- | --- |
 | `hide.bs.popover` | This event is fired immediately when the `hide` instance method has been called. |
@@ -240,7 +182,6 @@ The `setContent` method accepts an `object` argument, where each property-key is
 | `inserted.bs.popover` | This event is fired after the `show.bs.popover` event when the popover template has been added to the DOM. |
 | `show.bs.popover` | This event fires immediately when the `show` instance method is called. |
 | `shown.bs.popover` | This event is fired when the popover has been made visible to the user (will wait for CSS transitions to complete). |
-{{< /bs-table >}}
 
 ```js
 const myPopoverTrigger = document.getElementById('myPopover')

@@ -934,3 +934,32 @@ ul.pagination li.active a, ul.pagination li.active span{
  -webkit-box-shadow: 4px 4px 0px 0px #c2c2c2;
  -moz-box-shadow: 4px 4px 0px 0px #c2c2c2;
 }
+.popover-header {
+ margin-top: 0 !important;
+}
+.bs-popover-auto[data-popper-placement^=right]>.popover-arrow::after, .bs-popover-end>.popover-arrow::after {
+ left: var(--bs-popover-border-width);
+ border-right-color: #111;
+}
+.bs-popover-auto[data-popper-placement^=top]>.popover-arrow::after, .bs-popover-end>.popover-arrow::after {
+ border-top-color: #111;
+}
+.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::after, .bs-popover-end>.popover-arrow::after {
+ border-bottom-color: #111;
+}
+.bs-popover-auto[data-popper-placement^=left]>.popover-arrow::after, .bs-popover-end>.popover-arrow::after {
+ border-left-color: #111;
+}
+.popover{
+ border: 2px solid #111;
+ box-shadow: 4px 4px 0px 0px #c2c2c2;
+ -webkit-box-shadow: 4px 4px 0px 0px #c2c2c2;
+ -moz-box-shadow: 4px 4px 0px 0px #c2c2c2;
+ border-radius: 0;
+}
+.popover-header, .popover-body{
+ border-radius: 0;
+}
+.popover-header{
+ border-bottom: 2px solid #111;
+}
