@@ -78,6 +78,8 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Carousel', link: 'en/components/carousels' },
 			{ text: 'Collapse', link: 'en/components/collapse' },
 			{ text: 'Dropdowns', link: 'en/components/dropdowns' },
+			{ text: 'List groups', link: 'en/components/list_groups' },
+			{ text: 'Modals', link: 'en/components/modals' },
 		],
 	},
 };
