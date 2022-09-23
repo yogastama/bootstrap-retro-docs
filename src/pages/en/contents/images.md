@@ -1,7 +1,7 @@
 ---
 title: Images
 description: Docs intro
-layout: ../../layouts/MainLayout.astro
+layout: ../../../layouts/MainLayout.astro
 ---
 
 <p>
@@ -9,7 +9,7 @@ layout: ../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Responsive Images
+## Responsive Images
 
 <div class="card">
  <div class="card-body">
@@ -21,7 +21,7 @@ layout: ../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Image thumbnails
+## Image thumbnails
 
 <div class="card">
  <div class="card-body">
@@ -32,7 +32,7 @@ layout: ../../layouts/MainLayout.astro
  </div>
 </div>
 
-### Aligning images
+## Aligning images
 
 <div class="card">
  <div class="card-body">
@@ -63,4 +63,10 @@ layout: ../../layouts/MainLayout.astro
    &lt;img src=&quot;...&quot; class=&quot;rounded&quot; alt=&quot;...&quot;&gt;
  &lt;/div&gt;</code></pre>
  </div>
+</div>
+<hr>
+
+## Picture
+<div class="alert alert-info">
+  Coming soon...
 </div>

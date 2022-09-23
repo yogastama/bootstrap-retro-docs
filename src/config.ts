@@ -51,10 +51,10 @@ export const SIDEBAR: Sidebar = {
 			{ text: 'Introduction', link: 'en/introduction' },
 		],
 		'Content': [
-			{ text: 'Typography', link: 'en/typography' },
-			{ text: 'Images', link: 'en/images' },
-			{ text: 'Tables', link: 'en/tables' },
-			{ text: 'Figures', link: 'en/figures' },
+			{ text: 'Typography', link: 'en/contents/typography' },
+			{ text: 'Images', link: 'en/contents/images' },
+			{ text: 'Tables', link: 'en/contents/tables' },
+			{ text: 'Figures', link: 'en/contents/figures' },
 		],
 		'Forms': [
 			{ text: 'Overview', link: 'en/overview_form' },
