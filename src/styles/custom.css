@@ -919,3 +919,11 @@ ul.pagination li.active a, ul.pagination li.active span{
  -moz-box-shadow: 4px 4px 0px 0px #111;
  border: 2px solid #111;
 }
+.placeholder {
+ display: inline-block;
+ min-height: 1em;
+ vertical-align: middle;
+ cursor: wait;
+ background-color: #111;
+ opacity: .5;
+}
