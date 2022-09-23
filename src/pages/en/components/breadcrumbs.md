@@ -1,7 +1,7 @@
 ---
 title: Breadcrumbs
 description: Docs intro
-layout: ../../layouts/MainLayout.astro
+layout: ../../../layouts/MainLayout.astro
 ---
 
 <div class="alert alert-warning">
