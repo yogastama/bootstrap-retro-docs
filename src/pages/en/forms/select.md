@@ -9,7 +9,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Default
+## Default
 
 <div class="card">
  <div class="card-body">
@@ -31,7 +31,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Sizing
+## Sizing
 <div class="card">
  <div class="card-body">
   <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
@@ -67,7 +67,7 @@ layout: ../../../layouts/MainLayout.astro
 
 <hr>
 
-### Multiple
+## Multiple
 <div class="card">
  <div class="card-body">
   <select class="form-select" multiple aria-label="multiple select example">
@@ -106,7 +106,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Readonly
+## Readonly
 <div class="card">
  <div class="card-body">
   <input class="retro-input form-control" type="text" value="Readonly input here..." aria-label="readonly input example"
@@ -118,7 +118,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Disabled
+## Disabled
 <div class="card">
  <div class="card-body">
   <select class="form-select" aria-label="Disabled select example" disabled>

@@ -10,7 +10,7 @@ layout: ../../../layouts/MainLayout.astro
 </p>
 <hr>
 
-### Example
+## Example
 
 <div class="card">
  <div class="card-body">
@@ -36,7 +36,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Sizing
+## Sizing
 <div class="card">
  <div class="card-body">
   <input class="retro-input mt-3 form-control form-control-lg" type="text" placeholder=".form-control-lg"
@@ -57,7 +57,7 @@ layout: ../../../layouts/MainLayout.astro
 
 <hr>
 
-### Disabled
+## Disabled
 <div class="card">
  <div class="card-body">
   <input class="retro-input mt-3 form-control" type="text" placeholder="Disabled input"
@@ -72,7 +72,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Readonly
+## Readonly
 <div class="card">
  <div class="card-body">
   <input class="retro-input form-control" type="text" value="Readonly input here..." aria-label="readonly input example"
@@ -84,7 +84,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Readonly plain text
+## Readonly plain text
 <div class="card">
  <div class="card-body">
   <div class="mb-3 row">
@@ -149,7 +149,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### File input
+## File input
 <div class="card">
  <div class="card-body">
   <div class="mb-3">
@@ -197,7 +197,7 @@ layout: ../../../layouts/MainLayout.astro
  </div>
 </div>
 <hr>
-### Color
+## Color
 
 <div class="card">
  <div class="card-body">
@@ -212,7 +212,7 @@ layout: ../../../layouts/MainLayout.astro
 </div>
 <hr>
 
-### Datalists
+## Datalists
 <div class="card">
  <div class="card-body">
   <label for="exampleDataList" class="form-label">Datalist example</label>

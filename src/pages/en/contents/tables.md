@@ -8,29 +8,6 @@ layout: ../../..//layouts/MainLayout.astro
   Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with
   Bootstrap.
 </p>
-<div class="alert alert-warning">
-  Tables will be retro...
-</div>
-<p>
-  Homework <span class="badge text-bg-warning">Coming soon...</span>
-</p>
-<ul>
-  <li>
-    Nesting
-  </li>
-  <li>
-    Anatomy
-  </li>
-  <li>
-    Table head
-  </li>
-  <li>
-    Table foot
-  </li>
-  <li>
-    Caption
-  </li>
-</ul>
 <hr>
 
 <div class="card">
