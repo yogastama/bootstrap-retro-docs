@@ -960,6 +960,22 @@ ul.pagination li.active a, ul.pagination li.active span{
 .popover-header, .popover-body{
  border-radius: 0;
 }
+.toast{
+ border: 2px solid #111;
+ box-shadow: 4px 4px 0px 0px #c2c2c2;
+ -webkit-box-shadow: 4px 4px 0px 0px #c2c2c2;
+ -moz-box-shadow: 4px 4px 0px 0px #c2c2c2;
+ border-radius: 0;
+}
+.toast-header, .toast-body{
+ border-radius: 0;
+}
+.toast-header{
+ border-bottom: 1px solid #111;
+}
 .popover-header{
  border-bottom: 2px solid #111;
+}
+.toast-container{
+ z-index: 9999;
 }
