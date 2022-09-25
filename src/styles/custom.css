@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-body {
- background-color: #FDF4E7;
-}
-
 .font-inter {
  font-family: 'Inter', sans-serif;
 }
@@ -480,7 +476,6 @@ input[placeholder] {
 .btn-outline-primary {
  color: #0c63e4 !important;
  border: 2px solid #0c63e4;
- /* background-color: #b6d4fe !important; */
  box-shadow: 3px 3px 0px 0px #0c63e4;
  -webkit-box-shadow: 3px 3px 0px 0px #0c63e4;
  -moz-box-shadow: 3px 3px 0px 0px #0c63e4;
@@ -500,7 +495,6 @@ input[placeholder] {
 .btn-outline-secondary {
  color: #2e2f30 !important;
  border: 2px solid #2e2f30;
- /* background-color: #e2e3e5 !important; */
  box-shadow: 3px 3px 0px 0px #2e2f30;
  -webkit-box-shadow: 3px 3px 0px 0px #2e2f30;
  -moz-box-shadow: 3px 3px 0px 0px #2e2f30;
@@ -540,7 +534,6 @@ input[placeholder] {
 .btn-outline-danger {
  color: #842029 !important;
  border: 2px solid #842029;
- /* background-color: #eeced0 !important; */
  box-shadow: 3px 3px 0px 0px #842029;
  -webkit-box-shadow: 3px 3px 0px 0px #842029;
  -moz-box-shadow: 3px 3px 0px 0px #842029;
