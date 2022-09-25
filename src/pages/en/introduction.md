@@ -32,6 +32,10 @@ layout: ../../layouts/MainLayout.astro
 
 ## Install
 
+<div class="alert alert-warning">
+ Beta!
+</div>
+
 [![GitHub issues](https://img.shields.io/github/issues/yogastama/bootstrap_retro)](https://github.com/yogastama/bootstrap_retro/issues)
 [![GitHub forks](https://img.shields.io/github/forks/yogastama/bootstrap_retro)](https://github.com/yogastama/bootstrap_retro/network)
 [![GitHub stars](https://img.shields.io/github/stars/yogastama/bootstrap_retro)](https://github.com/yogastama/bootstrap_retro/stargazers)
