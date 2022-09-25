@@ -47,7 +47,7 @@ export type Sidebar = Record<
 >;
 export const SIDEBAR: Sidebar = {
 	en: {
-		'Section Header': [
+		'Quick Start': [
 			{ text: 'Introduction', link: 'en/introduction' },
 		],
 		'Content': [
