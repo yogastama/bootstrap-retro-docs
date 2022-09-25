@@ -4,9 +4,6 @@ description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
 
-<p>
- Create consistent cross-browser and cross-device checkboxes and radios with our completely rewritten checks component.
-</p>
 <hr>
 
 ## Default
@@ -409,21 +406,19 @@ layout: ../../../layouts/MainLayout.astro
   <div>
    <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
   </div>
-
   <div>
    <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" aria-label="...">
   </div>
  </div>
  <div class="card-footer">
-  &lt;div&gt;
+  <pre><code class="language-html">&lt;div&gt;
   &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;checkboxNoLabel&quot;
   value=&quot;&quot; aria-label=&quot;...&quot;&gt;
-  &lt;/div&gt;
-
-  &lt;div&gt;
+&lt;/div&gt;
+&lt;div&gt;
   &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;radioNoLabel&quot;
   id=&quot;radioNoLabel1&quot; value=&quot;&quot; aria-label=&quot;...&quot;&gt;
-  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
  </div>
 </div>
 

@@ -4,10 +4,6 @@ description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
 
-<p>
- Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide
- variety of forms.
-</p>
 <hr>
 
 ### Overview

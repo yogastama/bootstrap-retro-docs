@@ -4,12 +4,9 @@ description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
 
-<p>
- Use our custom range inputs for consistent cross-browser styling and built-in customization.
-</p>
 <hr>
 
-## Overview
+## Example
 
 <div class="card">
  <div class="card-body">

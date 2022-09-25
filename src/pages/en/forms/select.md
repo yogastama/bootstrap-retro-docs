@@ -4,9 +4,6 @@ description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
 
-<p>
- Customize the native <code class="language-html">&lt;select&gt;</code> s with custom CSS that changes the element’s initial appearance.
-</p>
 <hr>
 
 ## Default
