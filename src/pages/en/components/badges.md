@@ -4,9 +4,6 @@ description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
 
-<p>
- Documentation and examples for badges, our small count and labeling component.
-</p>
 <hr>
 
 ### Headings

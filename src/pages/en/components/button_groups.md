@@ -4,9 +4,6 @@ description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
 
-<p>
- Group a series of buttons together on a single line or stack them in a vertical column.
-</p>
 <hr>
 
 ## Basic example

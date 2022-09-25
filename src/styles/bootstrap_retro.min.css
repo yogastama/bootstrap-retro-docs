@@ -5976,10 +5976,6 @@ fieldset:disabled .btn {
  color: var(--bs-list-group-color);
  text-decoration: none;
  background-color: var(--bs-list-group-bg);
- border: 2px solid #111;
- box-shadow: 5px 5px 0px 0px #c2c2c2;
- -webkit-box-shadow: 5px 5px 0px 0px #c2c2c2;
- -moz-box-shadow: 5px 5px 0px 0px #c2c2c2;
 }
 
 .list-group-item:first-child {
