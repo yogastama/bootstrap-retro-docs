@@ -48,5 +48,6 @@ $ npm install @yogastama/bootstrap_retro
 ## Usage
 
 ```js
-const bootstrap_retro = require("@yogastama/bootstrap_retro");
+import "@yogastama/bootstrap_retro/css/bootstrap_retro.min.css";
+import "@yogastama/bootstrap_retro/js/bootstrap.min.js";
 ```
