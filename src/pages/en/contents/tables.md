@@ -4,10 +4,6 @@ description: Docs intro
 layout: ../../..//layouts/MainLayout.astro
 ---
 
-<p>
-  Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with
-  Bootstrap.
-</p>
 <hr>
 
 <div class="card">
@@ -42,39 +38,40 @@ layout: ../../..//layouts/MainLayout.astro
       </tbody>
     </table>
   </div>
-  <div class="card-footer">
-    <pre><code class="language-html">&lt;table class=&quot;table&quot;&gt;
-   &lt;thead&gt;
-    &lt;tr&gt;
-     &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
-     &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
-     &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
-     &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
-    &lt;/tr&gt;
-   &lt;/thead&gt;
-   &lt;tbody&gt;
-    &lt;tr&gt;
-     &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-     &lt;td&gt;Mark&lt;/td&gt;
-     &lt;td&gt;Otto&lt;/td&gt;
-     &lt;td&gt;@mdo&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-     &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
-     &lt;td&gt;Jacob&lt;/td&gt;
-     &lt;td&gt;Thornton&lt;/td&gt;
-     &lt;td&gt;@fat&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-     &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
-     &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
-     &lt;td&gt;@twitter&lt;/td&gt;
-    &lt;/tr&gt;
-   &lt;/tbody&gt;
-  &lt;/table&gt;
- &lt;/div&gt;</code></pre>
-  </div>
 </div>
+
+```html
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+```
+
 <hr>
 
 ## Variants
@@ -137,38 +134,40 @@ layout: ../../..//layouts/MainLayout.astro
       </tbody>
     </table>
   </div>
-  <div class="card-footer">
-    <pre><code class="language-html">&lt;!-- On tables --&gt;
-&lt;table class=&quot;table-primary&quot;&gt;...&lt;/table&gt;
-&lt;table class=&quot;table-secondary&quot;&gt;...&lt;/table&gt;
-&lt;table class=&quot;table-success&quot;&gt;...&lt;/table&gt;
-&lt;table class=&quot;table-danger&quot;&gt;...&lt;/table&gt;
-&lt;table class=&quot;table-warning&quot;&gt;...&lt;/table&gt;
-&lt;table class=&quot;table-info&quot;&gt;...&lt;/table&gt;
-&lt;table class=&quot;table-light&quot;&gt;...&lt;/table&gt;
-&lt;table class=&quot;table-dark&quot;&gt;...&lt;/table&gt;
-&lt;!-- On rows --&gt;
-&lt;tr class=&quot;table-primary&quot;&gt;...&lt;/tr&gt;
-&lt;tr class=&quot;table-secondary&quot;&gt;...&lt;/tr&gt;
-&lt;tr class=&quot;table-success&quot;&gt;...&lt;/tr&gt;
-&lt;tr class=&quot;table-danger&quot;&gt;...&lt;/tr&gt;
-&lt;tr class=&quot;table-warning&quot;&gt;...&lt;/tr&gt;
-&lt;tr class=&quot;table-info&quot;&gt;...&lt;/tr&gt;
-&lt;tr class=&quot;table-light&quot;&gt;...&lt;/tr&gt;
-&lt;tr class=&quot;table-dark&quot;&gt;...&lt;/tr&gt;
-&lt;!-- On cells (`td` or `th`) --&gt;
-&lt;tr&gt;
-  &lt;td class=&quot;table-primary&quot;&gt;...&lt;/td&gt;
-  &lt;td class=&quot;table-secondary&quot;&gt;...&lt;/td&gt;
-  &lt;td class=&quot;table-success&quot;&gt;...&lt;/td&gt;
-  &lt;td class=&quot;table-danger&quot;&gt;...&lt;/td&gt;
-  &lt;td class=&quot;table-warning&quot;&gt;...&lt;/td&gt;
-  &lt;td class=&quot;table-info&quot;&gt;...&lt;/td&gt;
-  &lt;td class=&quot;table-light&quot;&gt;...&lt;/td&gt;
-  &lt;td class=&quot;table-dark&quot;&gt;...&lt;/td&gt;
-&lt;/tr&gt;</code></pre>
-  </div>
 </div>
+
+```html
+<!-- On tables -->
+<table class="table-primary">...</table>
+<table class="table-secondary">...</table>
+<table class="table-success">...</table>
+<table class="table-danger">...</table>
+<table class="table-warning">...</table>
+<table class="table-info">...</table>
+<table class="table-light">...</table>
+<table class="table-dark">...</table>
+<!-- On rows -->
+<tr class="table-primary">...</tr>
+<tr class="table-secondary">...</tr>
+<tr class="table-success">...</tr>
+<tr class="table-danger">...</tr>
+<tr class="table-warning">...</tr>
+<tr class="table-info">...</tr>
+<tr class="table-light">...</tr>
+<tr class="table-dark">...</tr>
+<!-- On cells (`td` or `th`) -->
+<tr>
+  <td class="table-primary">...</td>
+  <td class="table-secondary">...</td>
+  <td class="table-success">...</td>
+  <td class="table-danger">...</td>
+  <td class="table-warning">...</td>
+  <td class="table-info">...</td>
+  <td class="table-light">...</td>
+  <td class="table-dark">...</td>
+</tr>
+```
+
 <hr>
 
 ## Accented tables
@@ -204,46 +203,41 @@ layout: ../../..//layouts/MainLayout.astro
           <td>@twitter</td>
         </tr>
       </tbody>
-
     </table>
   </div>
-  <div class="card-footer">
-    <pre>
-   <code class="language-html">
-    &lt;table class=&quot;table table-striped&quot;&gt;
-      &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
-      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
-      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
-      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-      &lt;td&gt;Mark&lt;/td&gt;
-      &lt;td&gt;Otto&lt;/td&gt;
-      &lt;td&gt;@mdo&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
-      &lt;td&gt;Jacob&lt;/td&gt;
-      &lt;td&gt;Thornton&lt;/td&gt;
-      &lt;td&gt;@fat&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
-      &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
-      &lt;td&gt;@twitter&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-
-  &lt;/table&gt;
-   </code>
-  </pre>
-  </div>
 </div>
+
+```html
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+```
 
 <p>
   Other variants :
@@ -278,46 +272,41 @@ layout: ../../..//layouts/MainLayout.astro
           <td>@twitter</td>
         </tr>
       </tbody>
-
     </table>
   </div>
-  <div class="card-footer">
-    <pre>
-   <code class="language-html">
-    &lt;table class=&quot;table table-dark table-striped&quot;&gt;
-      &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
-      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
-      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
-      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-      &lt;td&gt;Mark&lt;/td&gt;
-      &lt;td&gt;Otto&lt;/td&gt;
-      &lt;td&gt;@mdo&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
-      &lt;td&gt;Jacob&lt;/td&gt;
-      &lt;td&gt;Thornton&lt;/td&gt;
-      &lt;td&gt;@fat&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
-      &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
-      &lt;td&gt;@twitter&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-
-  &lt;/table&gt;
-   </code>
-  </pre>
-  </div>
 </div>
+
+```html
+<table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+```
 
 ### Striped Columns
 <div class="card">
@@ -350,46 +339,42 @@ layout: ../../..//layouts/MainLayout.astro
           <td>@twitter</td>
         </tr>
       </tbody>
-
     </table>
   </div>
-  <div class="card-footer">
-    <pre>
-   <code class="language-html">
-    &lt;table class=&quot;table table-striped-columns&quot;&gt;
-      &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
-      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
-      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
-      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-      &lt;td&gt;Mark&lt;/td&gt;
-      &lt;td&gt;Otto&lt;/td&gt;
-      &lt;td&gt;@mdo&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
-      &lt;td&gt;Jacob&lt;/td&gt;
-      &lt;td&gt;Thornton&lt;/td&gt;
-      &lt;td&gt;@fat&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
-      &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
-      &lt;td&gt;@twitter&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-
-  &lt;/table&gt;
-   </code>
-  </pre>
-  </div>
 </div>
+
+```html
+<table class="table table-striped-columns">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+```
+
 <p>
   Other variants :
 </p>
@@ -423,46 +408,41 @@ layout: ../../..//layouts/MainLayout.astro
           <td>@twitter</td>
         </tr>
       </tbody>
-
     </table>
   </div>
-  <div class="card-footer">
-    <pre>
-   <code class="language-html">
-    &lt;table class=&quot;table table-dark table-striped-columns&quot;&gt;
-      &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
-      &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
-      &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
-      &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-      &lt;td&gt;Mark&lt;/td&gt;
-      &lt;td&gt;Otto&lt;/td&gt;
-      &lt;td&gt;@mdo&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
-      &lt;td&gt;Jacob&lt;/td&gt;
-      &lt;td&gt;Thornton&lt;/td&gt;
-      &lt;td&gt;@fat&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
-      &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
-      &lt;td&gt;@twitter&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-
-  &lt;/table&gt;
-   </code>
-  </pre>
-  </div>
 </div>
+
+```html
+<table class="table table-dark table-striped-columns">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+```
 
 ### Hoverable rows
 
@@ -498,39 +478,40 @@ layout: ../../..//layouts/MainLayout.astro
       </tbody>
     </table>
   </div>
-  <div class="card-footer">
-    <pre><code class="language-html">&lt;table class=&quot;table table-hover&quot;&gt;
-   &lt;thead&gt;
- &lt;tr&gt;
-   &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
-   &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
-   &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
-   &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
- &lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
- &lt;tr&gt;
-   &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-   &lt;td&gt;Mark&lt;/td&gt;
-   &lt;td&gt;Otto&lt;/td&gt;
-   &lt;td&gt;@mdo&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
-   &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
-   &lt;td&gt;Jacob&lt;/td&gt;
-   &lt;td&gt;Thornton&lt;/td&gt;
-   &lt;td&gt;@fat&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
-   &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
-   &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
-   &lt;td&gt;@twitter&lt;/td&gt;
- &lt;/tr&gt;
-&lt;/tbody&gt;
-
-&lt;/table&gt;</code></pre>
-  </div>
 </div>
+
+```html
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+```
+
 <div class="card">
   <div class="card-body">
     <table class="table table-dark table-hover">
@@ -563,39 +544,39 @@ layout: ../../..//layouts/MainLayout.astro
       </tbody>
     </table>
   </div>
-  <div class="card-footer">
-    <pre><code class="language-html">&lt;table class=&quot;table table-dark table-hover&quot;&gt;
-   &lt;thead&gt;
- &lt;tr&gt;
-   &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
-   &lt;th scope=&quot;col&quot;&gt;First&lt;/th&gt;
-   &lt;th scope=&quot;col&quot;&gt;Last&lt;/th&gt;
-   &lt;th scope=&quot;col&quot;&gt;Handle&lt;/th&gt;
- &lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
- &lt;tr&gt;
-   &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-   &lt;td&gt;Mark&lt;/td&gt;
-   &lt;td&gt;Otto&lt;/td&gt;
-   &lt;td&gt;@mdo&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
-   &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
-   &lt;td&gt;Jacob&lt;/td&gt;
-   &lt;td&gt;Thornton&lt;/td&gt;
-   &lt;td&gt;@fat&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
-   &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
-   &lt;td colspan=&quot;2&quot;&gt;Larry the Bird&lt;/td&gt;
-   &lt;td&gt;@twitter&lt;/td&gt;
- &lt;/tr&gt;
-&lt;/tbody&gt;
-
-&lt;/table&gt;</code></pre>
-  </div>
 </div>
+
+```html
+<table class="table table-dark table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+```
 
 ### Active tables
 
