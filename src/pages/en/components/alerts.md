@@ -4,10 +4,6 @@ description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
 
-<p>
- Provide contextual feedback messages for typical user actions with the handful of available and flexible alert
- messages.
-</p>
 <hr>
 
 ## Example
@@ -88,30 +84,30 @@ layout: ../../../layouts/MainLayout.astro
 <p>
  Js :
 </p>
-<div class="card">
- <div class="card-footer">
-  <pre><code class="language-html">const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 
-   const alert = (message, type) =&gt; {
-     const wrapper = document.createElement('div')
-     wrapper.innerHTML = [
-       '&lt;div class=&quot;alert alert-${type} alert-dismissible&quot; role=&quot;alert&quot;&gt;`,
-       `   &lt;div&gt;${message}&lt;/div&gt;`,
-       '   &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;',
-       '&lt;/div&gt;'
-     ].join('')
-   
-     alertPlaceholder.append(wrapper)
-   }
-   
-   const alertTrigger = document.getElementById('liveAlertBtn')
-   if (alertTrigger) {
-     alertTrigger.addEventListener('click', () =&gt; {
-       alert('Nice, you triggered this alert message!', 'success')
-     })
-   }</code></pre>
- </div>
-</div>
+```js
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert('Nice, you triggered this alert message!', 'success')
+  })
+}
+```
+
 <hr>
 
 ### Link color
@@ -208,3 +204,68 @@ layout: ../../../layouts/MainLayout.astro
  &lt;/div&gt;</code></pre>
  </div>
 </div>
+
+## JavaScript behavior
+
+### Initialize
+
+Initialize elements as alerts
+
+```js
+const alertList = document.querySelectorAll('.alert')
+const alerts = [...alertList].map(element => new bootstrap.Alert(element))
+```
+
+
+### Triggers
+
+**Note that closing an alert will remove it from the DOM.**
+```html
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+```
+
+```html
+<button type="button" class="btn-close" data-bs-dismiss="alert" data-bs-target="#my-alert" aria-label="Close"></button>
+```
+
+### Methods
+
+You can create an alert instance with the alert constructor, for example:
+
+```js
+const bsAlert = new bootstrap.Alert('#myAlert')
+```
+
+This makes an alert listen for click events on descendant elements which have the `data-bs-dismiss="alert"` attribute. (Not necessary when using the data-api’s auto-initialization.)
+
+| Method | Description |
+| --- | --- |
+| `close` | Closes an alert by removing it from the DOM. If the `.fade` and `.show` classes are present on the element, the alert will fade out before it is removed. |
+| `dispose` | Destroys an element's alert. (Removes stored data on the DOM element) |
+| `getInstance` | Static method which allows you to get the alert instance associated to a DOM element. For example: `bootstrap.Alert.getInstance(alert)`. |
+| `getOrCreateInstance` | Static method which returns an alert instance associated to a DOM element or create a new one in case it wasn't initialized. You can use it like this: `bootstrap.Alert.getOrCreateInstance(element)`. |
+
+Basic usage:
+
+```js
+const alert = bootstrap.Alert.getOrCreateInstance('#myAlert')
+alert.close()
+```
+
+### Events
+
+Bootstrap's alert plugin exposes a few events for hooking into alert functionality.
+
+| Event | Description |
+| --- | --- |
+| `close.bs.alert` | Fires immediately when the `close` instance method is called. |
+| `closed.bs.alert` | Fired when the alert has been closed and CSS transitions have completed. |
+
+```js
+const myAlert = document.getElementById('myAlert')
+myAlert.addEventListener('closed.bs.alert', event => {
+  // do something, for instance, explicitly move focus to the most appropriate element,
+  // so it doesn't get lost/reset to the start of the page
+  // document.getElementById('...').focus()
+})
+```

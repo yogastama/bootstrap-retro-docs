@@ -4,9 +4,6 @@ description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
 
-<p>
- Give your forms some structure—from inline to horizontal to custom grid implementations—with our form layout options.
-</p>
 <hr>
 
 ## Utilities

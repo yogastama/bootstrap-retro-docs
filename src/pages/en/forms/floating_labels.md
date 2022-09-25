@@ -4,9 +4,6 @@ description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
 
-<p>
- Create beautifully simple form labels that float over your input fields.
-</p>
 <hr>
 
 ## Example

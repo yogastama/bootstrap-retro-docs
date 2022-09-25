@@ -4,10 +4,6 @@ description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
 
-<p>
- Provide valuable, actionable feedback to your users with HTML5 form validation, via browser default behaviors or custom
- styles and JavaScript.
-</p>
 <hr>
 
 ## Custom styles

@@ -4,9 +4,6 @@ description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
 
-<p>
- Build vertically collapsing accordions in combination with our Collapse JavaScript plugin.
-</p>
 <hr>
 
 ## Example
