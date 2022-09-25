@@ -49,7 +49,7 @@ const popover = new bootstrap.Popover('.example-popover', {
 })
 ```
 
-Another situation where you'll want to set an explicit custom `container` are popovers inside a [modal dialog]({{< docsref "/components/modal" >}}), to make sure that the popover itself is appended to the modal. This is particularly important for popovers that contain interactive elements – modal dialogs will trap focus, so unless the popover is a child element of the modal, users won't be able to focus or activate these interactive elements.
+Another situation where you'll want to set an explicit custom `container` are popovers inside a modal dialog, to make sure that the popover itself is appended to the modal. This is particularly important for popovers that contain interactive elements – modal dialogs will trap focus, so unless the popover is a child element of the modal, users won't be able to focus or activate these interactive elements.
 
 ```js
 const popover = new bootstrap.Popover('.example-popover', {
@@ -107,7 +107,7 @@ Note that for security reasons the `sanitize`, `sanitizeFn`, and `allowList` opt
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| `allowList` | object | [Default value]({{< docsref "/getting-started/javascript#sanitizer" >}}) | Object which contains allowed attributes and tags. |
+| `allowList` | object | [Default value](https://getbootstrap.com/docs/5.2/getting-started/javascript/#sanitizer) | Object which contains allowed attributes and tags. |
 | `animation` | boolean | `true` | Apply a CSS fade transition to the popover. |
 | `boundary` | string, element | `'clippingParents'` | Overflow constraint boundary of the popover (applies only to Popper's preventOverflow modifier). By default, it's `'clippingParents'` and can accept an HTMLElement reference (via JavaScript only). For more information refer to Popper's [detectOverflow docs](https://popper.js.org/docs/v2/utils/detect-overflow/#boundary). |
 | `container` | string, element, false | `false` | Appends the popover to a specific element. Example: `container: 'body'`. This option is particularly useful in that it allows you to position the popover in the flow of the document near the triggering element - which will prevent the popover from floating away from the triggering element during a window resize. |

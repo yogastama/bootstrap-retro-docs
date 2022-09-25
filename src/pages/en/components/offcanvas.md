@@ -3,18 +3,6 @@ title: Offcanvas
 description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
-
-## How it works
-
-Offcanvas is a sidebar component that can be toggled via JavaScript to appear from the left, right, top, or bottom edge of the viewport. Buttons or anchors are used as triggers that are attached to specific elements you toggle, and `data` attributes are used to invoke our JavaScript.
-
-- Offcanvas shares some of the same JavaScript code as modals. Conceptually, they are quite similar, but they are separate plugins.
-- Similarly, some [source Sass](#sass) variables for offcanvas's styles and dimensions are inherited from the modal's variables.
-- When shown, offcanvas includes a default backdrop that can be clicked to hide the offcanvas.
-- Similar to modals, only one offcanvas can be shown at a time.
-
-**Heads up!** Given how CSS handles animations, you cannot use `margin` or `translate` on an `.offcanvas` element. Instead, use the class as an independent wrapping element.
-
 ## Examples
 
 ### Live demo
@@ -236,14 +224,6 @@ Add a dismiss button with the `data-bs-dismiss="offcanvas"` attribute, which tri
 #### Toggle
 
 Add `data-bs-toggle="offcanvas"` and a `data-bs-target` or `href` to the element to automatically assign control of one offcanvas element. The `data-bs-target` attribute accepts a CSS selector to apply the offcanvas to. Be sure to add the class `offcanvas` to the offcanvas element. If you'd like it to default open, add the additional class `show`.
-
-#### Dismiss
-
-{{% js-dismiss "offcanvas" %}}
-
-{{< callout warning >}}
-While both ways to dismiss an offcanvas are supported, keep in mind that dismissing from outside an offcanvas does not match the [ARIA Authoring Practices Guide dialog (modal) pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialogmodal/). Do this at your own risk.
-{{< /callout >}}
 
 ### Via JavaScript
 

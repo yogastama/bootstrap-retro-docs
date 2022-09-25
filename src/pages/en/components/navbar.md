@@ -4,20 +4,6 @@ description: Docs intro
 layout: ../../../layouts/MainLayout.astro
 ---
 
-## Supported content
-
-Navbars come with built-in support for a handful of sub-components. Choose from the following as needed:
-
-- `.navbar-brand` for your company, product, or project name.
-- `.navbar-nav` for a full-height and lightweight navigation (including support for dropdowns).
-- `.navbar-toggler` for use with our collapse plugin and other [navigation toggling](#responsive-behaviors) behaviors.
-- Flex and spacing utilities for any form controls and actions.
-- `.navbar-text` for adding vertically centered strings of text.
-- `.collapse.navbar-collapse` for grouping and hiding navbar contents by a parent breakpoint.
-- Add an optional `.navbar-scroll` to set a `max-height` and [scroll expanded navbar content](#scrolling).
-
-Here's an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the `lg` (large) breakpoint.
-
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand font-righteous" href="#">Navbar</a>
@@ -201,9 +187,6 @@ Place various form controls and components within a navbar:
     </form>
   </div>
 </nav>
-
-
-Immediate child elements of `.navbar` use flex layout and will default to `justify-content: space-between`. Use additional [flex utilities]({{< docsref "/utilities/flex" >}}) as needed to adjust this behavior.
 
 
 <nav class="navbar bg-light">
