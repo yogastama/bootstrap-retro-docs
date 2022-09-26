@@ -5,6 +5,13 @@ layout: ../../layouts/MainLayout.astro
 ---
 
 **Welcome to Bootstrap Retro!**
+
+[![GitHub issues](https://img.shields.io/github/issues/yogastama/bootstrap_retro)](https://github.com/yogastama/bootstrap_retro/issues)
+[![GitHub forks](https://img.shields.io/github/forks/yogastama/bootstrap_retro)](https://github.com/yogastama/bootstrap_retro/network)
+[![GitHub stars](https://img.shields.io/github/stars/yogastama/bootstrap_retro)](https://github.com/yogastama/bootstrap_retro/stargazers)
+[![GitHub license](https://img.shields.io/github/license/yogastama/bootstrap_retro)](https://github.com/yogastama/bootstrap_retro)
+![npm](https://img.shields.io/npm/dw/@yogastama/bootstrap_retro)
+
 <div class="alert alert-info">We recommend you to change the theme to light.</div>
 <hr>
 <p>
@@ -38,11 +45,6 @@ layout: ../../layouts/MainLayout.astro
 <div class="alert alert-warning">
  Beta!
 </div>
-
-[![GitHub issues](https://img.shields.io/github/issues/yogastama/bootstrap_retro)](https://github.com/yogastama/bootstrap_retro/issues)
-[![GitHub forks](https://img.shields.io/github/forks/yogastama/bootstrap_retro)](https://github.com/yogastama/bootstrap_retro/network)
-[![GitHub stars](https://img.shields.io/github/stars/yogastama/bootstrap_retro)](https://github.com/yogastama/bootstrap_retro/stargazers)
-[![GitHub license](https://img.shields.io/github/license/yogastama/bootstrap_retro)](https://github.com/yogastama/bootstrap_retro)
 
 ```
 $ npm install @yogastama/bootstrap_retro
